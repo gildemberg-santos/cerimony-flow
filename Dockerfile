@@ -10,7 +10,7 @@ WORKDIR /app
 
 COPY ./backend/main.go ./
 COPY ./backend/go.mod ./
-# COPY ./backend/go.sum ./
+COPY ./backend/go.sum ./
 
 COPY --from=frontend-builder /frontend/build ./frontend/build
 
@@ -21,7 +21,7 @@ WORKDIR /
 
 COPY --from=backend-builder /app/main /main
 
-COPY --from=backend-builder /app/frontend/build /frontend/build
+COPY --from=backend-builder /app/frontend/build ./
 
 EXPOSE 8080
 
