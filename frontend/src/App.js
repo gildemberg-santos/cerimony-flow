@@ -6,11 +6,14 @@ function App() {
   const [message, setMessage] = useState('')
 
   useEffect(() => {
-    axios.defaults.headers.post['Content-Type'] = 'application/json';
-    axios.defaults.headers.post['Access-Control-Allow-Origin'] = '*';
-
-    const url = process.env.REACT_APP_API_BASE || "" + '/hello';
-    axios.get(url).then(({ data }) => setMessage(data.message));
+    const url = `${process.env.REACT_APP_API_BASE || ''}/hello`;
+    axios.get(url, {
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      mode: 'no-cors',
+    }).then(({ data }) => setMessage(data.message))
+      .catch(error => console.error(error));
   }, []);
 
   return (
