@@ -1,6 +1,7 @@
 package main
 
 import (
+	"encoding/json"
 	"fmt"
 	"net/http"
 	"os"
@@ -15,10 +16,12 @@ func main() {
 	http.Handle("/", fs)
 
 	http.HandleFunc("/hello", func(w http.ResponseWriter, r *http.Request) {
-		w.Header().Set("Content-Type", "application/json")
 		w.Header().Set("Access-Control-Allow-Origin", "*")
 		w.WriteHeader(http.StatusOK)
-		w.Write([]byte(`{"message": "Hello World"}`))
+		resp, _ := json.Marshal(map[string]string{
+			"message": "Hello World",
+		})
+		w.Write(resp)
 	})
 
 	fmt.Println("Server is running on port 8080 ...")
