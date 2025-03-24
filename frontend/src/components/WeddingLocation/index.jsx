@@ -26,7 +26,7 @@ function WeddingLocation({title, src}) {
   };
 
   return (
-    <div className="bg-light mb-4">
+    <div className="mb-4">
       <h2 className="my-4 wedding-text text-center font-cursive">{title}</h2>
       <div className="map-container mb-4">
         <iframe
