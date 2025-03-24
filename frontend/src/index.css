@@ -26,7 +26,7 @@ body {
 
 .modal-image-container {
   overflow: hidden;
-  max-height: 80vh; /* Ajuste conforme necessário */
+  max-height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -68,19 +68,24 @@ body {
 }
 
 .bg-olive {
-  background-color: var(--verde-mais-escuro); /* Verde mais escuro */
+  background-color: var(--verde-mais-escuro);
 }
 
 .text-olive {
-  color: var(--verde-mais-escuro); /* Verde mais escuro */
+  color: var(--verde-mais-escuro);
 }
 
 .btn-outline-olive {
-  color: var(--verde-mais-escuro); /* Verde mais escuro */
+  color: var(--verde-mais-escuro);
   border-color: var(--verde-mais-escuro);
 }
 
 .btn-outline-olive:hover {
-  background-color: var(--verde-mais-escuro); /* Verde mais escuro */
+  background-color: var(--verde-mais-escuro);
   color: #fff;
+}
+
+.bg-textura {
+  background-size: cover;
+  background-repeat: no-repeat;
 }
