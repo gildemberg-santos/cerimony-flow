@@ -9,7 +9,7 @@ function App() {
     axios.defaults.headers.post['Content-Type'] = 'application/json';
     axios.defaults.headers.post['Access-Control-Allow-Origin'] = '*';
 
-    const url = process.env.REACT_APP_API_BASE + '/hello';
+    const url = process.env.REACT_APP_API_BASE || "" + '/hello';
     axios.get(url).then(({ data }) => setMessage(data.message));
   }, []);
 
