@@ -35,6 +35,10 @@ type WeddingList struct {
 	WeddingList []Wedding `json:"wedding_list"`
 }
 
+type WeddingPhotos struct {
+	Pictures []string `json:"pictures"`
+}
+
 var nameGroom = "Gildemberg"
 var nameBride = "Bruna"
 var whatsappGroom = "5585991365507"
@@ -96,6 +100,16 @@ var weddingList = []Wedding{
 	},
 }
 
+var weddingPhotos = WeddingPhotos{
+	Pictures: []string{
+		"https://m.media-amazon.com/images/I/61qQCckVsqL._AC_SL1500_.jpg",
+		"https://m.media-amazon.com/images/I/61qQCckVsqL._AC_SL1500_.jpg",
+		"https://m.media-amazon.com/images/I/61qQCckVsqL._AC_SL1500_.jpg",
+		"https://m.media-amazon.com/images/I/61qQCckVsqL._AC_SL1500_.jpg",
+		"https://m.media-amazon.com/images/I/61qQCckVsqL._AC_SL1500_.jpg",
+	},
+}
+
 func main() {
 	godotenv.Load()
 
@@ -136,6 +150,13 @@ func main() {
 		}
 
 		http.Error(w, "Wedding not found", http.StatusNotFound)
+	})
+
+	http.HandleFunc("/wedding-photos", func(w http.ResponseWriter, r *http.Request) {
+		w.Header().Set("Access-Control-Allow-Origin", "*")
+		w.WriteHeader(http.StatusOK)
+		resp, _ := json.Marshal(weddingPhotos)
+		w.Write(resp)
 	})
 
 	fmt.Println("Server is running on port 8080 ...")
