@@ -70,5 +70,5 @@ body {
   background-image: url('./textura.png');
   background-size: auto;
   background-repeat: repeat;
-  filter: saturate(100%);
+  filter: saturate(180%) brightness(0.8);
 }
