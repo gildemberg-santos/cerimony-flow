@@ -8,10 +8,9 @@ function calculateTimeLeft(date) {
     timeLeft = {
       dias: Math.floor(difference / (1000 * 60 * 60 * 24)),
       horas: Math.floor((difference / (1000 * 60 * 60)) % 24),
-      minutos: Math.floor((difference / 1000 / 60) % 60),
-      segundos: Math.floor((difference / 1000) % 60)
+      minutos: Math.floor((difference / 1000 / 60) % 60)
     };
-  }
+  };
 
   return timeLeft;
 }
@@ -20,11 +19,11 @@ function useCountdown(date) {
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft(date));
 
   useEffect(() => {
-    const timer = setTimeout(() => {
+    const timer = setInterval(() => {
       setTimeLeft(calculateTimeLeft(date));
-    }, 1000);
+    }, 30000);
 
-    return () => clearTimeout(timer);
+    return () => clearInterval(timer);
   }, [date]);
 
   return timeLeft;

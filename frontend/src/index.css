@@ -12,7 +12,6 @@
 }
 
 .body-text {
-  font-family: 'Roboto', sans-serif;
   color: var(--cor-escura); /* Tom mais escuro */
 }
 
@@ -22,6 +21,9 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
+  font-family: 'Roboto', sans-serif;
+  color: var(--cor-escura);
+  font-size: 1.5rem;
 }
 
 .modal-image-container {
@@ -46,27 +48,6 @@ body {
   color: #dc3545;
 }
 
-.font-cursive {
-  font-family: 'Cursive';
-  color: var(--verde-mais-escuro);
-}
-
-.font-roboto {
-  font-family: 'Roboto', sans-serif;
-}
-
-.font-size-1-2em {
-  font-size: 1.2em;
-}
-
-.font-size-1-1em {
-  font-size: 1.1em;
-}
-
-.font-size-0-9em {
-  font-size: 0.9em;
-}
-
 .bg-olive {
   background-color: var(--verde-mais-escuro);
 }
@@ -85,7 +66,9 @@ body {
   color: #fff;
 }
 
-.bg-textura {
-  background-size: cover;
-  background-repeat: no-repeat;
+.bg-texture {
+  background-image: url('./textura.png');
+  background-size: auto;
+  background-repeat: repeat;
+  filter: saturate(100%);
 }

@@ -17,18 +17,20 @@ function WeddingDate({ title, date }) {
     }
 
     timerComponents.push(
-      <div key={interval} className="countdown-content">
+      <div key={interval} className="border border-light p-4 d-inline-block mx-2">
+        <div className="d-flex flex-column align-items-center">
         <span className="timer-value">{timeLeft[interval]}</span>
         <span className="timer-label">{interval}</span>
+        </div>
       </div>
     );
   });
 
   return (
-    <div className="bg-olive mb-4 p-4">
-      <h2 className="my-4 body-text text-center font-cursive text-light">{title}</h2>
+    <div className="bg-olive p-4">
+      <h2 className="wedding-text text-center font-cursive text-light">{title}</h2>
       <p className="body-text text-center font-roboto font-size-1-2em text-light">{formatDate(date)}</p>
-      <div className="timer-container body-text text-center font-roboto font-size-1-2em text-light">
+      <div className="body-text text-center font-roboto font-size-1-2em text-light">
         {timerComponents.length ? timerComponents : <span>Já chegou!</span>}
       </div>
     </div>

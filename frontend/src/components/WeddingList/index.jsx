@@ -3,8 +3,8 @@ import { Button, Card, Col, Row } from 'react-bootstrap';
 
 function WeddingList({ weddingList, handleShowModal }) {
   return (
-    <div className="bg-light mb-4 p-4">
-      <h2 className="my-4 body-text text-center font-cursive">Lista de Casamento</h2>
+    <div className="mb-4 p-4">
+      <h2 className="my-4 wedding-text text-center font-cursive">Lista de Casamento</h2>
       <Row className="justify-content-center">
         {weddingList.map((item, index) => (
           <Col key={index} xs={12} sm={6} md={4} lg={3} className="mb-4">
