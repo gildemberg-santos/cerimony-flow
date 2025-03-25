@@ -1,18 +1,26 @@
 :root {
-  --verde-mais-escuro: #173A2B;
-  --verde-escuro: #133627;
-  --cor-clara: #f8f9fa;
-  --cor-escura: #343a40;
-  --texto-claro: #ffffff;
+  --color-primary: #173A2B;
+  --color-secondary: #343a40;
 }
 
-.wedding-text {
+.text-title {
   font-family: 'Dancing Script', cursive;
-  color: var(--verde-mais-escuro); /* Verde mais escuro */
+};
+
+.text-primary {
+  color: var(--color-primary) !important;
 }
 
-.body-text {
-  color: var(--cor-escura); /* Tom mais escuro */
+.text-secondary {
+  color: var(--color-secondary);
+}
+
+.bg-primary {
+  background-color: var(--color-primary) !important
+}
+
+.bg-secondary {
+  background-color: var(--color-secondary);
 }
 
 body {
@@ -21,54 +29,31 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  font-family: 'Roboto', sans-serif;
-  color: var(--cor-escura);
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
   font-size: 1.5rem;
-}
-
-.modal-image-container {
-  overflow: hidden;
-  max-height: 80vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.modal-image {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: cover;
-}
-
-.text-success {
-  color: #28a745;
-}
-
-.text-danger {
-  color: #dc3545;
-}
-
-.bg-olive {
-  background-color: var(--verde-mais-escuro);
-}
-
-.text-olive {
-  color: var(--verde-mais-escuro);
-}
-
-.btn-outline-olive {
-  color: var(--verde-mais-escuro);
-  border-color: var(--verde-mais-escuro);
-}
-
-.btn-outline-olive:hover {
-  background-color: var(--verde-mais-escuro);
-  color: #fff;
+  color: var(--color-secondary)
 }
 
 .bg-texture {
   background-image: url('./textura.png');
   background-size: auto;
   background-repeat: repeat;
-  filter: saturate(180%) brightness(0.8);
+}
+
+.outline-button {
+  border: 2px solid var(--color-primary);
+  background-color: transparent;
+  color: var(--color-primary);
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.outline-button:hover {
+  background-color: var(--color-primary);
+  color: #fff;
 }
