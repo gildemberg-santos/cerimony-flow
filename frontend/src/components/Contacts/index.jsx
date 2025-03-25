@@ -1,12 +1,13 @@
 import React from 'react';
-import { Button } from 'react-bootstrap';
+import ButtonCustom from '../ButtonCustom';
+import SubTitleCustom from '../SubTitleCustom';
 
-function Contacts({ whatsappGroom, whatsappBride, nameGroom, nameBride }) {
+function Contacts({ title, whatsappGroom, whatsappBride, nameGroom, nameBride }) {
   return (
     <div className="mb-4 p-4 d-flex flex-column align-items-center">
-      <h2 className="my-4 wedding-text text-center font-cursive">Contatos</h2>
-      <Button variant="outline-olive" href={`${whatsappGroom}`} target="_blank" rel="noopener noreferrer" className="mb-2">WhatsApp ({nameGroom})</Button>
-      <Button variant="outline-olive" href={`${whatsappBride}`} target="_blank" rel="noopener noreferrer">WhatsApp ({nameBride})</Button>
+      <SubTitleCustom>{title}</SubTitleCustom>
+      <ButtonCustom href={whatsappGroom} className="mb-2">WhatsApp ({nameGroom})</ButtonCustom>
+      <ButtonCustom href={whatsappBride}>WhatsApp ({nameBride})</ButtonCustom>
     </div>
   );
 }
