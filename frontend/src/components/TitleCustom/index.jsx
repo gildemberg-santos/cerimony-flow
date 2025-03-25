@@ -1,8 +1,8 @@
 import './styles.css';
 
-function TitleCustom({ children }) {
+function TitleCustom({ children, className }) {
   return (
-    <h1 className="my-4 text-center text-title display-1 text-primary">{children}</h1>
+    <h1 className={`my-4 text-center text-title display-1 text-primary ${className}`}>{children}</h1>
   );
 }
 

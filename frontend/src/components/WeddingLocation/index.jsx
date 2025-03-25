@@ -29,7 +29,7 @@ function WeddingLocation({title, src}) {
 
   return (
     <div className="mb-4">
-      <SubTitleCustom>{title}</SubTitleCustom>
+      <SubTitleCustom className="text-primary">{title}</SubTitleCustom>
       <div className="text-center font-roboto mb-4 fs-5">
         R. Sabiaguaba, 1270 - Edson Queiroz, Fortaleza - CE, 60835-750
       </div>

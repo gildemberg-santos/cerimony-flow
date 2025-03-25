@@ -10,7 +10,7 @@ function Header({ title, description }) {
       <div className="crest text-center mb-2">
         <img src={brasao} alt="Brasão" width={200} height={200} />
       </div>
-      <TitleCustom>{title}</TitleCustom>
+      <TitleCustom className="text-primary">{title}</TitleCustom>
       <div className="image-container mb-4">
         <img src={background} alt="Cerimônia" className="img-fluid w-100 cropped-image filter-image" />
       </div>

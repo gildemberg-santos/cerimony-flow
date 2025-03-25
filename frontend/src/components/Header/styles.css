@@ -21,3 +21,7 @@
 .filter-image {
   filter: brightness(70%) contrast(120%) saturate(100%);
 }
+
+.text-primary {
+  color: var(--color-primary) !important;
+}
