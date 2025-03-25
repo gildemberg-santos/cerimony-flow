@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react';
+import ButtonCustom from '../ButtonCustom';
+import SubTitleCustom from '../SubTitleCustom';
 
 function WeddingLocation({title, src}) {
   const [isShareSupported, setIsShareSupported] = useState(false);
@@ -27,7 +29,10 @@ function WeddingLocation({title, src}) {
 
   return (
     <div className="mb-4">
-      <h2 className="my-4 wedding-text text-center font-cursive">{title}</h2>
+      <SubTitleCustom>{title}</SubTitleCustom>
+      <div className="text-center font-roboto mb-4 fs-5">
+        R. Sabiaguaba, 1270 - Edson Queiroz, Fortaleza - CE, 60835-750
+      </div>
       <div className="map-container mb-4">
         <iframe
           src={src}
@@ -40,7 +45,7 @@ function WeddingLocation({title, src}) {
       </div>
       {isShareSupported && (
         <div className="text-center">
-          <button onClick={handleShare} className="btn btn-primary">Compartilhar</button>
+          <ButtonCustom onClick={handleShare} className="btn-primary">Compartilhar</ButtonCustom>
         </div>
       )}
     </div>
