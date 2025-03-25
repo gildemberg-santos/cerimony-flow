@@ -1,0 +1,15 @@
+.button-custom{
+  background-color: var(--color-primary) !important;
+  border: 1px solid white !important;
+}
+
+.button-custom:hover{
+  background-color: var(--color-secondary) !important;
+  border: 1px solid white !important;
+}
+
+.button-custom:active{
+  background-color: var(--color-secondary) !important;
+  border: 1px solid white !important;
+}
+
