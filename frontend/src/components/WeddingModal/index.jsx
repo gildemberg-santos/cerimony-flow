@@ -1,10 +1,13 @@
 import React from 'react';
-import { Button, Col, Modal, Row } from 'react-bootstrap';
+import { Col, Modal, Row } from 'react-bootstrap';
+import '../../index.css';
+import ButtonCustom from '../ButtonCustom';
+import './styles.css';
 
 function WeddingModal({ showModal, handleCloseModal, selectedItem, whatsappGroom, whatsappBride, nameGroom, nameBride, cellPhoneGroom, cellPhoneBride }) {
   return (
     <Modal show={showModal} onHide={handleCloseModal} size="xl" centered>
-      <Modal.Header className="text-white bg-olive">
+      <Modal.Header className="text-white bg-primary">
         <Modal.Title>{selectedItem?.title}</Modal.Title>
       </Modal.Header>
       <Modal.Body className="bg-light">
@@ -16,31 +19,31 @@ function WeddingModal({ showModal, handleCloseModal, selectedItem, whatsappGroom
           </Col>
           <Col xs={12} md={8}>
             <p>{selectedItem?.description}</p>
-            <p className={`mt-2 ${selectedItem?.available ? 'text-success' : 'text-danger'} font-size-0-9em`}>
+            <p className={`mt-2 ${selectedItem?.available ? 'text-success' : 'text-danger'} fs-6`}>
               {selectedItem?.available ? "Disponível" : "Indisponível"}
             </p>
             <div className="mt-4 d-flex flex-column align-items-start">
-              <Button variant="outline-olive" href={selectedItem?.link} target="_blank" rel="noopener noreferrer" className="mb-2">Ver Produto na Loja</Button>
-              <Button variant="outline-olive" href={`${whatsappGroom}`} target="_blank" rel="noopener noreferrer" className="mb-2">WhatsApp ({nameGroom})</Button>
-              <Button variant="outline-olive" href={`${whatsappBride}`} target="_blank" rel="noopener noreferrer">WhatsApp ({nameBride})</Button>
+              <ButtonCustom href={selectedItem?.link} className="mb-2">Ver Produto na Loja</ButtonCustom>
+              <ButtonCustom href={`${whatsappGroom}`} className="mb-2">WhatsApp ({nameGroom})</ButtonCustom>
+              <ButtonCustom href={`${whatsappBride}`}>WhatsApp ({nameBride})</ButtonCustom>
             </div>
-            <p className="mt-4 body-text font-size-0-9em">
+            <p className="mt-4 font-size-0-9em">
               ou o valor do presente pode ser transferido para a conta dos noivos via Pix
             </p>
             <div className="mt-4 d-flex flex-column">
-              <h5 className="body-text font-cursive">Dados para transferência</h5>
-              <div className="body-text mt-2">
+              <h5 className="fs-5 fw-bold text-primary">Dados para transferência</h5>
+              <div className="mt-2 fs-6 text-secondary">
                 <strong>Pix ({nameGroom}):</strong> {cellPhoneGroom}
               </div>
-              <div className="body-text">
+              <div className="fs-6 text-secondary">
                 <strong>Pix ({nameBride}):</strong> {cellPhoneBride}
               </div>
             </div>
           </Col>
         </Row>
       </Modal.Body>
-      <Modal.Footer className="text-white bg-olive">
-        <Button variant="outline-light" onClick={handleCloseModal}>Fechar</Button>
+      <Modal.Footer className="text-white bg-primary">
+        <ButtonCustom onClick={handleCloseModal}>Fechar</ButtonCustom>
       </Modal.Footer>
     </Modal>
   );

@@ -1,0 +1,17 @@
+.modal-image-container {
+  overflow: hidden;
+  max-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.text-primary {
+  color: var(--color-primary) !important;
+}
