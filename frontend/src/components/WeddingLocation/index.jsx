@@ -16,7 +16,7 @@ function WeddingLocation({title, src}) {
       try {
         await navigator.share({
           title: 'Local do Casamento',
-          url: window.location.href,
+          url: src,
         });
         console.log('Compartilhamento bem-sucedido');
       } catch (error) {
