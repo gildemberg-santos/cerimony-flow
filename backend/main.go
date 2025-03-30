@@ -84,7 +84,7 @@ var weddingList = []Wedding{
 	},
 	{
 		ID:          4,
-		Title:       "Sanduicheira grill",
+		Title:       "Sanduicheira",
 		Description: "Sanduicheira grill chapa ondulada elétrico Electrolux antiaderente inox ESG20 220v",
 		Picture:     "https://m.media-amazon.com/images/I/511Bqbpr12L._AC_SL1000_.jpg",
 		Link:        "https://www.amazon.com.br/dp/B0CCBY3YMC",
@@ -92,7 +92,7 @@ var weddingList = []Wedding{
 	},
 	{
 		ID:          5,
-		Title:       "Conjunto De 6 Xícaras",
+		Title:       "Xícaras",
 		Description: "Conjunto De 6 Xícaras Grandes 220 Ml Com Pires Ryo Pink Sand - Oxford",
 		Picture:     "https://m.media-amazon.com/images/I/41MufvzLJ0L._AC_SL1000_.jpg",
 		Link:        "https://www.amazon.com.br/dp/B07T39LN9D",
@@ -100,7 +100,7 @@ var weddingList = []Wedding{
 	},
 	{
 		ID:          6,
-		Title:       "Jogo de 6 Taças",
+		Title:       "Taças",
 		Description: "Jogo de 6 Taças Vinho Tinto Xtra Cristal 460ml A24cm",
 		Picture:     "https://m.media-amazon.com/images/I/31EkEkILE5L._AC_SL1000_.jpg",
 		Link:        "https://www.amazon.com.br/dp/B0B5LMNG3R",
