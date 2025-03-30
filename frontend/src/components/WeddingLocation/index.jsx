@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import ButtonCustom from '../ButtonCustom';
 import SubTitleCustom from '../SubTitleCustom';
 
-function WeddingLocation({title, src}) {
+function WeddingLocation({ title, src, share }) {
   const [isShareSupported, setIsShareSupported] = useState(false);
 
   useEffect(() => {
@@ -16,7 +16,7 @@ function WeddingLocation({title, src}) {
       try {
         await navigator.share({
           title: 'Local do Casamento',
-          url: src,
+          url: share,
         });
         console.log('Compartilhamento bem-sucedido');
       } catch (error) {
