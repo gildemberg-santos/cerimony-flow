@@ -1,11 +1,12 @@
 import React from 'react';
 import { Card, Col, Row } from 'react-bootstrap';
 import ButtonCustom from '../ButtonCustom';
+import SubTitleCustom from '../SubTitleCustom';
 
 function WeddingList({ title, weddingList, handleShowModal }) {
   return (
     <div className="mb-4 p-4">
-      <h2 className="text-primary">{title}</h2>
+      <SubTitleCustom className="text-primary">{title}</SubTitleCustom>
       <Row className="justify-content-center">
         {weddingList.map((item, index) => (
           <Col key={index} xs={12} sm={6} md={4} lg={3} className="mb-4">
