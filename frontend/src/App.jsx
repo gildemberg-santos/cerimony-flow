@@ -33,7 +33,7 @@ function App() {
       />
       <WeddingDate
         title="Data de Casamento"
-        date="2025-11-09T16:00:00"
+        date="2025-11-09T16:30:00"
       />
       <WeddingLocation
         title="Localização do Casamento"
