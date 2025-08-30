@@ -170,6 +170,46 @@ var weddingList = []Wedding{
 		Link:        "https://www.amazon.com.br/dp/B0FF9CCB3X",
 		Available:   true,
 	},
+	{
+		ID:          15,
+		Title:       "Colcha",
+		Description: "Kit Colcha Balle Para Cama King 400 Fios Dupla Face 3 Peças Cores Lisas Tecido Piquet Toque Mácio Acompanha Cobre Leito e 2 Porta Travesseiros (Tiffany, Casal King (260x280cm))",
+		Picture:     "https://m.media-amazon.com/images/I/613JI8rSTML._AC_SL1000_.jpg",
+		Link:        "https://www.amazon.com.br/dp/B0DPGPGY5B",
+		Available:   true,
+	},
+	{
+		ID:          16,
+		Title:       "Colchão",
+		Description: "Colchão Casal de espuma D28 Emma Basics 17cm – com tecnologia alemã, 100 noites de teste e 5 anos de garantia",
+		Picture:     "https://m.media-amazon.com/images/I/7102jT-oGNL._AC_SL1500_.jpg",
+		Link:        "https://www.amazon.com.br/dp/B0B8ZF9DR3",
+		Available:   true,
+	},
+	{
+		ID:          17,
+		Title:       "Kit Banheiro",
+		Description: "Kit Banheiro Lavabo Conjunto Acessórios lixeira escova 6 Peças Bambu Luxo Preto/Branco",
+		Picture:     "https://down-br.img.susercontent.com/file/br-11134207-7r98o-mcjiyijarzua36.webp",
+		Link:        "https://shopee.com.br/product/397571861/23393873729",
+		Available:   true,
+	},
+	{
+		ID:          18,
+		Title:       "Aspirador",
+		Description: "WAP Aspirador de Pó Robô ROBOT W90 3 em 1, Automático, 250ml, Sistema Antiqueda e Rodas Emborrachadas, 30W 3,6VDC Bivolt",
+		Picture:     "https://m.media-amazon.com/images/I/716GA5MQQkL._AC_SL1500_.jpg",
+		Link:        "https://www.amazon.com.br/dp/B0B9PSBNYL",
+		Available:   true,
+	},
+	{
+		ID:          19,
+		Title:       "Batedeira",
+		Description: "Batedeira Planetária, Mondial, Preto/Inox, 700W, 110V - BP-01P-B",
+		Picture:     "https://m.media-amazon.com/images/I/811erab5-PL._AC_SL1500_.jpg",
+		Link:        "https://www.amazon.com.br/dp/B07WDCZWFW",
+		Available:   true,
+	},
 }
 
 var weddingPhotos = WeddingPhotos{
