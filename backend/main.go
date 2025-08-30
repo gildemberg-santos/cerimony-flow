@@ -210,6 +210,22 @@ var weddingList = []Wedding{
 		Link:        "https://www.amazon.com.br/dp/B07WDCZWFW",
 		Available:   true,
 	},
+	{
+		ID:          20,
+		Title:       "Panela pressão elétrica",
+		Description: "Panela pressão elétrica Electrolux digital capacidade 6L silenciosa segura 10 travas segurança 15 receitas pré-programadas 3 níveis pressão PCC20 inox preto 127v por Rita Lobo",
+		Picture:     "https://m.media-amazon.com/images/I/51zXHW5nVjL._AC_SL1000_.jpg",
+		Link:        "https://www.amazon.com.br/dp/B076HYKFL7",
+		Available:   true,
+	},
+	{
+		ID:          21,
+		Title:       "Panificadora",
+		Description: "Panificadora Automática Master Bread, Mondial, Preto, 700W, 220V - NPF-53",
+		Picture:     "https://m.media-amazon.com/images/I/81G6rXDd9iL._AC_SL1500_.jpg",
+		Link:        "https://www.amazon.com.br/dp/B07L8X97SR",
+		Available:   true,
+	},
 }
 
 var weddingPhotos = WeddingPhotos{
