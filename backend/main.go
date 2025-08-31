@@ -226,6 +226,30 @@ var weddingList = []Wedding{
 		Link:        "https://www.amazon.com.br/dp/B07L8X97SR",
 		Available:   true,
 	},
+	{
+		ID:          22,
+		Title:       "Toalhas de Banho",
+		Description: "Buddemeyer Jogo de Toalhas Amanhecer Banho Branco 5 peças",
+		Picture:     "https://m.media-amazon.com/images/I/511VoVajAVL._AC_SL1000_.jpg",
+		Link:        "https://www.amazon.com.br/dp/B0DWY1CHR4",
+		Available:   true,
+	},
+	{
+		ID:          23,
+		Title:       "Talheres",
+		Description: "Faqueiro Jogo De Talheres Conjunto Inox Escovado 24 Peças Hamilton Beach Aspen",
+		Picture:     "https://m.media-amazon.com/images/I/41YglxqCpDL._AC_SL1000_.jpg",
+		Link:        "https://www.amazon.com.br/dp/B0FK5XTLT8",
+		Available:   true,
+	},
+	{
+		ID:          24,
+		Title:       "Kit Churrasco",
+		Description: "Kit Churrasco com Tabua, Kit Churrasco, Kit Churrasco Inox, Kit Churrasco Tradicional Inox 6 Peças, Kit Tábua para Churrasco, Kit de Churrasco 6 Peças com Tábua de Bambu",
+		Picture:     "https://m.media-amazon.com/images/I/61y3C7GbLlL._AC_SL1000_.jpg",
+		Link:        "https://www.amazon.com.br/dp/B0DQLBWH8R",
+		Available:   true,
+	},
 }
 
 var weddingPhotos = WeddingPhotos{
