@@ -6,7 +6,9 @@ import (
 	"net/http"
 	"net/url"
 	"os"
+	"sort"
 	"strconv"
+	"strings"
 
 	"github.com/joho/godotenv"
 )
@@ -60,39 +62,64 @@ var settings = Settings{
 func loadWeddingPhotosFromJSON(path string) ([]string, error) {
 	data, err := os.ReadFile(path)
 	if err != nil {
-		return nil, err
+		return nil, fmt.Errorf("failed to read file %s: %w", path, err)
 	}
+
 	var photos []string
-	err = json.Unmarshal(data, &photos)
-	return photos, err
+	if err := json.Unmarshal(data, &photos); err != nil {
+		return nil, fmt.Errorf("failed to parse JSON: %w", err)
+	}
+
+	if len(photos) == 0 {
+		return photos, nil
+	}
+
+	cleanPhotos := make([]string, 0, len(photos))
+	seen := make(map[string]bool)
+	for _, photo := range photos {
+		if photo != "" && !seen[photo] {
+			cleanPhotos = append(cleanPhotos, photo)
+			seen[photo] = true
+		}
+	}
+
+	return cleanPhotos, nil
 }
 
 func loadWeddingListFromJSON(path string) ([]Wedding, error) {
 	data, err := os.ReadFile(path)
 	if err != nil {
-		return nil, err
+		return nil, fmt.Errorf("failed to read file %s: %w", path, err)
 	}
+
 	var list []Wedding
-	err = json.Unmarshal(data, &list)
-	return list, err
+	if err := json.Unmarshal(data, &list); err != nil {
+		return nil, fmt.Errorf("failed to parse JSON: %w", err)
+	}
+
+	if len(list) == 0 {
+		return list, nil
+	}
+
+	sort.SliceStable(list, func(i, j int) bool {
+		return strings.ToLower(list[i].Title) < strings.ToLower(list[j].Title)
+	})
+
+	for i := range list {
+		list[i].ID = i + 1
+	}
+
+	return list, nil
 }
 
 func main() {
 	godotenv.Load()
 
-	list, err := loadWeddingListFromJSON("wedding_list.json")
+	weddingList, err := loadWeddingListFromJSON("wedding_list.json")
 	if err != nil {
 		fmt.Println("Erro ao carregar wedding_list.json:", err)
 		os.Exit(1)
 	}
-	weddingList := list
-
-	photos, err := loadWeddingPhotosFromJSON("wedding_photos.json")
-	if err != nil {
-		fmt.Println("Erro ao carregar wedding_photos.json:", err)
-		os.Exit(1)
-	}
-	weddingPhotos := WeddingPhotos{Pictures: photos}
 
 	fs := http.FileServer(http.Dir(os.Getenv("PATH_REACT")))
 	http.Handle("/", fs)
@@ -136,6 +163,14 @@ func main() {
 	http.HandleFunc("/wedding-photos", func(w http.ResponseWriter, r *http.Request) {
 		w.Header().Set("Access-Control-Allow-Origin", "*")
 		w.WriteHeader(http.StatusOK)
+
+		photos, err := loadWeddingPhotosFromJSON("wedding_photos.json")
+		if err != nil {
+			fmt.Println("Erro ao carregar wedding_photos.json:", err)
+			os.Exit(1)
+		}
+
+		weddingPhotos := WeddingPhotos{Pictures: photos}
 		resp, _ := json.Marshal(weddingPhotos)
 		w.Write(resp)
 	})
