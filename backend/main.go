@@ -83,6 +83,13 @@ func loadWeddingPhotosFromJSON() ([]string, error) {
 func loadWeddingListFromJSON() ([]Wedding, error) {
 	list := []Wedding{
 		{
+			Title:       "# Pix ou Dinheiro",
+			Description: "Contribuição em dinheiro para ajudar na realização do nosso sonho! Qualquer valor é bem-vindo e será muito apreciado. Agradecemos de coração pela sua generosidade e por fazer parte deste momento tão especial em nossas vidas.",
+			Picture:     "https://simsoft.com.br/storage/app/uploads/public/421/_pi/x-i/421_pix-interno.jpg",
+			Link:        "",
+			Available:   true,
+		},
+		{
 			Title:       "Micro-ondas",
 			Description: "Micro-ondas Electrolux Prata com Painel Integrado 31l Mi41s 220v",
 			Picture:     "https://m.media-amazon.com/images/I/51jWG1vyGyL._AC_SL1500_.jpg",
