@@ -248,7 +248,7 @@ func loadWeddingListFromJSON() ([]Wedding, error) {
 			Description: "Kit Churrasco com Tabua, Kit Churrasco, Kit Churrasco Inox, Kit Churrasco Tradicional Inox 6 Peças, Kit Tábua para Churrasco, Kit de Churrasco 6 Peças com Tábua de Bambu",
 			Picture:     "https://m.media-amazon.com/images/I/61y3C7GbLlL._AC_SL1000_.jpg",
 			Link:        "https://www.amazon.com.br/dp/B0DQLBWH8R",
-			Available:   true,
+			Available:   false,
 		},
 		{
 			Title:       "Tapete",
