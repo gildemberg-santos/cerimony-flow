@@ -101,7 +101,7 @@ func loadWeddingListFromJSON() ([]Wedding, error) {
 			Description: "Torradeira tostador Electrolux 8 niveis de tostagem função descongelar reaquecer cancelar bandeja coletora migalhas botões luminosos ETS25 inox 220v",
 			Picture:     "https://m.media-amazon.com/images/I/51pcpIXaj0L._AC_SL1000_.jpg",
 			Link:        "https://www.amazon.com.br/dp/B09CBT3BY5",
-			Available:   true,
+			Available:   false,
 		},
 		{
 			Title:       "Sanduicheira",
@@ -178,14 +178,14 @@ func loadWeddingListFromJSON() ([]Wedding, error) {
 			Description: "Colcha de Cama Casal 3 peças Luxo Algodão Cinza Menina Dupla Face Masculino Feminino (Bege Rosada, Casal)",
 			Picture:     "https://m.media-amazon.com/images/I/71zTINHgKqL._AC_SL1500_.jpg",
 			Link:        "https://www.amazon.com.br/dp/B0FF9CCB3X",
-			Available:   true,
+			Available:   false,
 		},
 		{
 			Title:       "Colcha",
 			Description: "Kit Colcha Balle Para Cama King 400 Fios Dupla Face 3 Peças Cores Lisas Tecido Piquet Toque Mácio Acompanha Cobre Leito e 2 Porta Travesseiros (Tiffany, Casal King (260x280cm))",
 			Picture:     "https://m.media-amazon.com/images/I/613JI8rSTML._AC_SL1000_.jpg",
 			Link:        "https://www.amazon.com.br/dp/B0DPGPGY5B",
-			Available:   true,
+			Available:   false,
 		},
 		{
 			Title:       "Colchão",
@@ -241,7 +241,7 @@ func loadWeddingListFromJSON() ([]Wedding, error) {
 			Description: "Faqueiro Tramontina Laguna em Aço Inox com Facas para Churrasco Acabamento em Brilho 24 Peças",
 			Picture:     "https://m.media-amazon.com/images/I/614p7dWdJ0L._AC_SL1200_.jpg",
 			Link:        "https://www.amazon.com.br/dp/B07KRNHSXV",
-			Available:   true,
+			Available:   false,
 		},
 		{
 			Title:       "Kit Churrasco",
