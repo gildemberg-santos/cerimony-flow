@@ -1,4 +1,3 @@
-import React from 'react';
 import { Col, Modal, Row } from 'react-bootstrap';
 import '../../index.css';
 import ButtonCustom from '../ButtonCustom';
@@ -23,7 +22,9 @@ function WeddingModal({ showModal, handleCloseModal, selectedItem, whatsappGroom
               {selectedItem?.available ? "Disponível" : "Indisponível"}
             </p>
             <div className="mt-4 d-flex flex-column align-items-start">
-              <ButtonCustom href={selectedItem?.link} className="mb-2">Ver Produto na Loja</ButtonCustom>
+              {selectedItem?.link && (
+                <ButtonCustom href={selectedItem?.link} className="mb-2">Ver Produto na Loja</ButtonCustom>
+              )}
               <ButtonCustom href={`${whatsappGroom}`} className="mb-2">WhatsApp ({nameGroom})</ButtonCustom>
               <ButtonCustom href={`${whatsappBride}`}>WhatsApp ({nameBride})</ButtonCustom>
             </div>
