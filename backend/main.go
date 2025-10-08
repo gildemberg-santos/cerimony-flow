@@ -292,6 +292,13 @@ func loadWeddingListFromJSON() ([]Wedding, error) {
 			Link:        "https://www.amazon.com.br/dp/B0DL7DH9L5",
 			Available:   true,
 		},
+		{
+			Title:       "Guarda Roupa",
+			Description: "Guarda-roupa Casal 8 Portas Batentes Branco/branco/rustic Netuno Madesa",
+			Picture:     "https://m.media-amazon.com/images/I/51SN0TEEhnL._AC_SL1000_.jpg",
+			Link:        "https://www.amazon.com.br/dp/B0FGDJX4M7",
+			Available:   true,
+		},
 	}
 
 	sort.SliceStable(list, func(i, j int) bool {
