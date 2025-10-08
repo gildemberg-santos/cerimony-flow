@@ -101,7 +101,7 @@ func loadWeddingListFromJSON() ([]Wedding, error) {
 			Description: "Cafeteira Eletrica Electrolux Programavel Com Timer 30 Xicaras Experience ECM 25-220V",
 			Picture:     "https://m.media-amazon.com/images/I/51OyvPACDML._AC_SL1000_.jpg",
 			Link:        "https://www.amazon.com.br/dp/B09SVPS7S8",
-			Available:   false,
+			Available:   true,
 		},
 		{
 			Title:       "Torradeira",
@@ -248,7 +248,7 @@ func loadWeddingListFromJSON() ([]Wedding, error) {
 			Description: "Faqueiro Tramontina Laguna em Aço Inox com Facas para Churrasco Acabamento em Brilho 24 Peças",
 			Picture:     "https://m.media-amazon.com/images/I/614p7dWdJ0L._AC_SL1200_.jpg",
 			Link:        "https://www.amazon.com.br/dp/B07KRNHSXV",
-			Available:   false,
+			Available:   true,
 		},
 		{
 			Title:       "Kit Churrasco",
