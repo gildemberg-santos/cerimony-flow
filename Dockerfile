@@ -8,7 +8,7 @@ RUN npm install && npm run build
 FROM golang:1.24.1-alpine AS backend-builder
 WORKDIR /app
 
-COPY ./backend/main.go ./
+COPY ./backend/cmd/server/main.go ./
 COPY ./backend/go.mod ./
 COPY ./backend/go.sum ./
 
