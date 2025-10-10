@@ -109,7 +109,7 @@ func loadWeddingListFromJSON() ([]Wedding, error) {
 			Description: "Fritadeira Elétrica Grand Airfryer 4L Electrolux EAF30 Grafite",
 			Picture:     "https://m.media-amazon.com/images/I/51qMgG4EBUL._AC_SL1000_.jpg",
 			Link:        "https://www.amazon.com.br/dp/B09NRYJ67D",
-			Available:   true,
+			Available:   false,
 		},
 		{
 			Title:       "Assadeiras",
@@ -186,7 +186,7 @@ func loadWeddingListFromJSON() ([]Wedding, error) {
 			Description: "WAP Aspirador de Pó Robô ROBOT W90 3 em 1, Automático, 250ml, Sistema Antiqueda e Rodas Emborrachadas, 30W 3,6VDC Bivolt",
 			Picture:     "https://m.media-amazon.com/images/I/716GA5MQQkL._AC_SL1500_.jpg",
 			Link:        "https://www.amazon.com.br/dp/B0B9PSBNYL",
-			Available:   true,
+			Available:   false,
 		},
 		{
 			Title:       "Batedeira",
