@@ -9,6 +9,7 @@ FROM golang:1.24.1-alpine AS backend-builder
 WORKDIR /app
 
 COPY ./backend/cmd/server/main.go ./
+COPY ./backend/internal ./internal
 COPY ./backend/go.mod ./
 COPY ./backend/go.sum ./
 
