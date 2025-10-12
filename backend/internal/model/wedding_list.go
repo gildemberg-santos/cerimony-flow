@@ -1,4 +1,4 @@
-package wedding_list
+package model
 
 import (
 	"sort"
@@ -235,6 +235,34 @@ func NewWeddingList() *WeddingList {
 			Description: "Guarda-roupa Casal 8 Portas Batentes Branco/branco/rustic Netuno Madesa",
 			Picture:     "https://m.media-amazon.com/images/I/51SN0TEEhnL._AC_SL1000_.jpg",
 			Link:        "https://www.amazon.com.br/dp/B0FGDJX4M7",
+			Available:   true,
+		},
+		{
+			Title:       "Cesto de Roupas",
+			Description: "Cesto de Roupas grid com tampa 49 litros - branco",
+			Picture:     "https://m.media-amazon.com/images/I/61kfENWSHaL._AC_SL1000_.jpg",
+			Link:        "https://www.amazon.com.br/dp/B0BCKWVHD9",
+			Available:   true,
+		},
+		{
+			Title:       "Jogo com 6 Tigela",
+			Description: "Kit com 6 Bowl Tigela Pote Cumbucas Redonda de Melamina Para Sobremesas Petiscos Molhos Brancas 250ml - Resistentes e Elegantes - Jogo de Sobremesa Melanina Bellagio Gourmet",
+			Picture:     "https://m.media-amazon.com/images/I/51c9o8nsflL._AC_SL1000_.jpg",
+			Link:        "https://www.amazon.com.br/dp/B0D1RHZL3V",
+			Available:   true,
+		},
+		{
+			Title:       "Jogo com 5 Potes de Vidro",
+			Description: "Oikos - Kit 5 Potes de Vidro com Tampa de Bambu Herméticos Redondos",
+			Picture:     "https://m.media-amazon.com/images/I/5139KTvprnL._AC_SL1000_.jpg",
+			Link:        "https://www.amazon.com.br/dp/B09KNY2MVC",
+			Available:   true,
+		},
+		{
+			Title:       "Jogo de Jantar",
+			Description: "1 Ap. De Jantar/cha 20pcs - M. Order - Jardim Secreto - Aw20-5953",
+			Picture:     "https://m.media-amazon.com/images/I/81wLBCuPjLL._AC_SL1500_.jpg",
+			Link:        "https://www.amazon.com.br/dp/B0CYJ3FQ9B",
 			Available:   true,
 		},
 	}
