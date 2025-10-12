@@ -1,4 +1,4 @@
-package wedding_photos
+package model
 
 type WeddingPhotos struct {
 	Pictures []string `json:"pictures"`
