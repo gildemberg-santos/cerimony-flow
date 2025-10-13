@@ -265,6 +265,13 @@ func NewWeddingList() *WeddingList {
 			Link:        "https://www.amazon.com.br/dp/B0CYJ3FQ9B",
 			Available:   true,
 		},
+		{
+			Title:       "Ferro de passar",
+			Description: "Electrolux, Ferro de passar seco e vapor, base antiaderente vapor vertical extra 1200W cabo 1,35m azul ESI10 220v",
+			Picture:     "https://m.media-amazon.com/images/I/515DMOLkl4L._AC_SL1000_.jpg",
+			Link:        "https://www.amazon.com.br/dp/B09LJYZWX7",
+			Available:   true,
+		},
 	}
 
 	sort.SliceStable(list, func(i, j int) bool {
