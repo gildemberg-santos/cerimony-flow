@@ -8,5 +8,4 @@ cerimony-flow/
 ├── Dockerfile
 ├── go.mod
 ├── go.sum
-├── main.go
 ```
