@@ -99,36 +99,6 @@ cerimony-flow/
 
 ---
 
-## Variáveis de ambiente
-
-Algumas variáveis que provavelmente serão usadas:
-
-| Variável                                              | Uso                                                |
-| ----------------------------------------------------- | -------------------------------------------------- |
-| `PORT`                                                | Porta onde o backend vai rodar                     |
-| `API_URL`                                             | URL do backend usada pelo frontend                 |
-| `DB_HOST`, `DB_PORT`, `DB_USER`, `DB_PASS`, `DB_NAME` | Para conexão ao banco de dados                     |
-| `STORAGE_URL` ou `STORAGE_KEY`                        | Se usar serviço de armazenamento de fotos em nuvem |
-| `JWT_SECRET`                                          | Se tiver autenticação / administração              |
-| `EMAIL_CONFIG`                                        | Se for enviar confirmações de convite por e-mail   |
-
-Você pode criar um arquivo `.env.example` com os nomes dessas variáveis para servir de modelo.
-
----
-
-## Temas e personalização
-
-Como este site será algo pessoal e comemorativo, inclua:
-
-* Personalização visual (cores que combinem com casamento, tipografia elegante)
-* Suporte a internacionalização (ex: português / inglês)
-* Animações leves (transições entre seções)
-* Responsividade para celular / tablet
-* SEO básico (meta tags, título, descrições)
-* Compartilhamento nas redes sociais (Open Graph tags para imagens)
-
----
-
 ## Contribuição
 
 Mesmo sendo um projeto mais pessoal, você pode organizar contribuições:
@@ -137,13 +107,3 @@ Mesmo sendo um projeto mais pessoal, você pode organizar contribuições:
 2. Use *branches* descritivas
 3. Documente bem o que for implementado
 4. Faça *pull requests* bem descritas
-
----
-
-## Licença
-
-Você pode escolher uma licença como **MIT**, **Apache 2.0**, **GPL**, etc. Se quiser permissividade máxima, MIT é uma boa escolha.
-
----
-
-Se quiser, posso gerar para você um README já “preenchido” com os detalhes exatos do seu repositório (nomes de pastas, scripts, variáveis) — posso inspecionar seu repositório e criar um arquivo final pronto para usar. Você quer que eu faça isso para seu projeto Cerimony Flow?
