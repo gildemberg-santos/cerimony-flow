@@ -277,7 +277,7 @@ func NewWeddingList() *WeddingList {
 			Description: "Ventilador de Mesa Mondial 220V, 40cm, 6 pás, Super Power - VSP-40-B",
 			Picture:     "https://m.media-amazon.com/images/I/81r2JL+Ru5L._AC_SL1500_.jpg",
 			Link:        "https://www.amazon.com.br/dp/B09B15RWPS",
-			Available:   true,
+			Available:   false,
 		},
 	}
 
