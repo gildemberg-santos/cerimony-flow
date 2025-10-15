@@ -158,7 +158,7 @@ func NewWeddingList() *WeddingList {
 			Description: "Batedeira Planetária, Mondial, Preto/Inox, 700W, 110V - BP-01P-B",
 			Picture:     "https://m.media-amazon.com/images/I/811erab5-PL._AC_SL1500_.jpg",
 			Link:        "https://www.amazon.com.br/dp/B07WDCZWFW",
-			Available:   true,
+			Available:   false,
 		},
 		{
 			Title:       "Panela pressão elétrica",
@@ -263,7 +263,7 @@ func NewWeddingList() *WeddingList {
 			Description: "1 Ap. De Jantar/cha 20pcs - M. Order - Jardim Secreto - Aw20-5953",
 			Picture:     "https://m.media-amazon.com/images/I/81wLBCuPjLL._AC_SL1500_.jpg",
 			Link:        "https://www.amazon.com.br/dp/B0CYJ3FQ9B",
-			Available:   true,
+			Available:   false,
 		},
 		{
 			Title:       "Ferro de passar",
