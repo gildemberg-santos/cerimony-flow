@@ -39,7 +39,7 @@ func NewWeddingList() *WeddingList {
 			Description: "Cafeteira Eletrica Electrolux Programavel Com Timer 30 Xicaras Experience ECM 25-220V",
 			Picture:     "https://m.media-amazon.com/images/I/51OyvPACDML._AC_SL1000_.jpg",
 			Link:        "https://www.amazon.com.br/dp/B09SVPS7S8",
-			Available:   true,
+			Available:   false,
 		},
 		{
 			Title:       "Torradeira",
@@ -60,7 +60,7 @@ func NewWeddingList() *WeddingList {
 			Description: "Conjunto De 6 Xícaras Grandes 220 Ml Com Pires Ryo Pink Sand - Oxford",
 			Picture:     "https://m.media-amazon.com/images/I/41MufvzLJ0L._AC_SL1000_.jpg",
 			Link:        "https://www.amazon.com.br/dp/B07T39LN9D",
-			Available:   true,
+			Available:   false,
 		},
 		{
 			Title:       "Taças",
