@@ -279,6 +279,20 @@ func NewWeddingList() *WeddingList {
 			Link:        "https://www.amazon.com.br/dp/B09B15RWPS",
 			Available:   false,
 		},
+		{
+			Title:       "Jogo com 6 Copos",
+			Description: "Jogo com 6 Copos Conjunto de Peças de Vidro Transparente, Linha 423ml para Suco e Água",
+			Picture:     "https://m.media-amazon.com/images/I/71lFvdnngbL._AC_SL1500_.jpg",
+			Link:        "https://www.amazon.com.br/dp/B0DJ6DRH9J",
+			Available:   true,
+		},
+		{
+			Title:       "Kit com 6 Tigela",
+			Description: "Kit com 6 Bowl Tigela Pote Cumbucas Redonda de Melamina Para Sobremesas Petiscos Molhos Brancas 250ml - Resistentes e Elegantes - Jogo de Sobremesa Melanina Bellagio Gourmet",
+			Picture:     "https://m.media-amazon.com/images/I/51c9o8nsflL._AC_SL1000_.jpg",
+			Link:        "https://www.amazon.com.br/dp/B0D1RHZL3V",
+			Available:   true,
+		},
 	}
 
 	sort.SliceStable(list, func(i, j int) bool {
