@@ -14,6 +14,8 @@ type Settings struct {
 	NameBride      string `json:"name_bride"`
 	CellPhoneGroom string `json:"cell_phone_groom"`
 	CellPhoneBride string `json:"cell_phone_bride"`
+	KeyPixGroom    string `json:"key_pix_groom"`
+	KeyPixBride    string `json:"key_pix_bride"`
 }
 
 func NewSettings() *Settings {
@@ -23,6 +25,8 @@ func NewSettings() *Settings {
 	var whatsappBride = "5585994510355"
 	var messageGroom = fmt.Sprintf("Oi %s, tudo bem?", nameGroom)
 	var messageBride = fmt.Sprintf("Oi %s, tudo bem?", nameBride)
+	var keyPixGroom = "5585991365507"
+	var keyPixBride = "09861125345"
 
 	return &Settings{
 		Title:          fmt.Sprintf("%s & %s", nameBride, nameGroom),
@@ -33,5 +37,7 @@ func NewSettings() *Settings {
 		NameBride:      nameBride,
 		CellPhoneGroom: whatsappGroom,
 		CellPhoneBride: whatsappBride,
+		KeyPixGroom:    keyPixGroom,
+		KeyPixBride:    keyPixBride,
 	}
 }
