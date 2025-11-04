@@ -186,7 +186,7 @@ func NewWeddingList() *WeddingList {
 			Description: "Faqueiro Tramontina Laguna em Aço Inox com Facas para Churrasco Acabamento em Brilho 24 Peças",
 			Picture:     "https://m.media-amazon.com/images/I/614p7dWdJ0L._AC_SL1200_.jpg",
 			Link:        "https://www.amazon.com.br/dp/B07KRNHSXV",
-			Available:   true,
+			Available:   false,
 		},
 		{
 			Title:       "Kit Churrasco",
